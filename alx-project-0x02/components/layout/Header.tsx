@@ -1,5 +1,5 @@
-// components/layout/Header.tsx
 import React from "react";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   return (
@@ -7,23 +7,23 @@ const Header: React.FC = () => {
       <div className="container mx-auto flex items-center justify-between p-4">
         {/* Logo */}
         <div className="text-2xl font-bold text-blue-600 cursor-pointer">
-          ALX Listings
+          <Link href="/">ALX Listings</Link>
         </div>
 
         {/* Navigation */}
         <nav className="space-x-6 hidden md:flex">
-          <a href="#" className="text-gray-700 hover:text-blue-600">
-            Home
-          </a>
-          <a href="#" className="text-gray-700 hover:text-blue-600">
-            Listings
-          </a>
-          <a href="#" className="text-gray-700 hover:text-blue-600">
-            About
-          </a>
-          <a href="#" className="text-gray-700 hover:text-blue-600">
-            Contact
-          </a>
+          <Link href="/home">
+            <a className="text-gray-700 hover:text-blue-600">Home</a>
+          </Link>
+          <Link href="/about">
+            <a className="text-gray-700 hover:text-blue-600">About</a>
+          </Link>
+          <Link href="/listings">
+            <a className="text-gray-700 hover:text-blue-600">Listings</a>
+          </Link>
+          <Link href="/contact">
+            <a className="text-gray-700 hover:text-blue-600">Contact</a>
+          </Link>
         </nav>
 
         {/* Auth buttons */}
