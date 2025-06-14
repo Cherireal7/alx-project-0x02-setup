@@ -12,17 +12,17 @@ const Header: React.FC = () => {
 
         {/* Navigation */}
         <nav className="space-x-6 hidden md:flex">
-          <Link href="/home">
-            <a className="text-gray-700 hover:text-blue-600">Home</a>
+          <Link href="/home" className="text-gray-700 hover:text-blue-600">
+            Home
           </Link>
-          <Link href="/about">
-            <a className="text-gray-700 hover:text-blue-600">About</a>
+          <Link href="/about" className="text-gray-700 hover:text-blue-600">
+            About
           </Link>
-          <Link href="/listings">
-            <a className="text-gray-700 hover:text-blue-600">Listings</a>
+          <Link href="/listings" className="text-gray-700 hover:text-blue-600">
+            Listings
           </Link>
-          <Link href="/contact">
-            <a className="text-gray-700 hover:text-blue-600">Contact</a>
+          <Link href="/contact" className="text-gray-700 hover:text-blue-600">
+            Contact
           </Link>
         </nav>
 
